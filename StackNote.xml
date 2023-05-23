@@ -1,0 +1,48 @@
+<body>
+	<Premise>
+		If 365 programmers can do 1 program in 365 days, how long would it take them all to do a single program? <br />
+		
+	</Premise>
+	<LittleBigLeague>
+		This is the same problem as the problem from Little Big League. <br />
+		If someone can paint a house in 3 hours, and if someone else can paint it in 5, if they work together, how long would it take? <br />
+		
+		<Solution>
+			The solution is to add up the rates of work, or the houses per hour. The problem is hard because we have to flip the fractions, add them up, and then flip it again to get the answer.
+			<WhyWeHaveToFlipIt>
+				We start at hours/house, then go to houses/hour, then back to hours/house for the final answer.
+			</WhyWeHaveToFlipIt>
+			<br />
+			
+			(x/a) is the hours per house of the first guy, (y/b) is the hours per house of the second guy. Given those two rates, adding them up gives us the rate that they can paint houses together. The x and y makes it so that if we have a painter who says "well it took me 10 hours to paint 2 houses" then their fraction becomes 2/10. Since both rates are in terms of one house, x=y=1.
+			<AddingFractions>
+				Before you can add them, each fraction needs to have a common multiple for the denominator. To do this, you multiply the top and bottom of each fraction with the other fraction's denominator. x/a+y/b = bx/ba+ay/ab. ab and ba are the same, so you can finally add them to get (ay+bx)/(ab). x/a+y/b = (ay+bx)/(ab). You'll notice a gets multiplied with y and b gets multiplied with x, which is the opposite numerator. The "butterfly method" is needed when adding fractions.
+				<LittleBigLeague>
+					Since x=y=1, it simplifies down to (a+b)/(a*b). <br />
+					
+				</LittleBigLeague>
+				So that gives us the total houses per hour, but we need to find the hours per house. Simplest way to do this is to flip the fraction.
+				<LittleBigLeague>
+					This is where the little big league answer (a*b)/(a+b) comes from.
+				</LittleBigLeague>
+				<DumbAlgebraMethod>
+					Some papers also explain that you can think of the houses per hour as the amount of time it takes to paint one house. We multiply the rate by the time to get the number of houses, then set it equal to one house. hours*(houses/hours)=houses. We know houses is 1, and (houses/hours) = (ay+bx)/(ab). t*((ay+bx)/(ab))=1. Then we solve for the hours it takes, which is t. <br />
+					
+				</DumbAlgebraMethod>
+			</AddingFractions>
+			So if 365 programmers can do 1 program in 365 days, how long would it take them all to do a program?
+			This is easy because x=y=1 again, but now a=b=365. (x/a)+(y/b) is now (1/a) + (1/a) = 2/a. That's just 2 programmers, so for 365 programmers, it's 365/365.
+		</Solution>
+	</LittleBigLeague>
+	<!-- Answer -->
+	365 programmers would take 1 day to program a single program. <br />
+	
+	<Sidenote>
+		Of course, this is assuming that there is no efficiency loss from adding an extra programmer, and that they work as a hivemind. <br />
+		
+	</Sidenote>
+	<conclusion>
+	Sorry to anyone who thought reading this would get a different answer, but at least you can see where it comes from instead of just intuitively thinking it, like Nathan Fielder. <br />
+	
+	</conclusion>
+</body>
